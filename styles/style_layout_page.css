@@ -1,7 +1,132 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Teko:wght@300..700&display=swap');
+
+:root{
+  /* Paleta de cores */
+  --cor00:#F2F2F2;
+  --cor01:#BCB4D9;
+  --cor02:#735BA6;
+  --cor03:#66548C;
+  --cor04:#2a2a2a;
+  --cor05:#0e0e0e;
+
+  /* Fontes */
+  --fonte-padrao:"Roboto", sans-serif;
+  --fonte-destaque: "Teko", sans-serif;
+  
+  
+}
+
 *{
   margin: 0px;
   padding: 0px; 
+  font-family: var(--fonte-padrao);
+  color: var(--cor05);
 }
 
+body{
+  background-color: var(--cor05);
+}
+
+header{
+  background-color: var(--cor05);
+  
+}
+
+header p{
+  color: var(--cor00);
+  text-align: right;
+  font-size: 0.7em;
+}
+
+header h1{
+  color: var(--cor00);
+  font-family: var(--fonte-destaque);
+  font-weight: lighter;
+  font-size: 5em;
+  text-align: center;
+  margin-top:-35px;
+  margin-bottom: -25px;
+}
+
+nav{
+  background-color: var(--cor04);
+  text-align: center;
+  margin-bottom: 1.4px;
+  padding: 7px;
+}
+
+nav a{
+  font-size: 1em;
+  margin: 0px 36px;
+  color: var(--cor00);
+  text-decoration: none;
+  transition-duration: 0.4s;
+  transition-delay: 0.1s;
+}
+
+nav a:hover{
+  color: var(--cor01);
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 1.1em;  
+  transition-duration: 0.4s;
+}
+
+main{
+  background-color: var(--cor00);
+  margin: auto;
+  max-width: 950px;
+  padding: 3px 8px;
+  text-align: justify;
+}
+
+main h2, h3, h4{
+  color: var(--cor03);
+  line-height: 2em;
+}
+
+main p{
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+main strong, abbr{
+color: var(--cor02);
+font-weight: bolder;
+text-decoration: none;
+}
+
+main em{
+  font-weight: lighter;
+}
+
+main a{
+  padding: 2px;
+  color: var(--cor03);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+main a:hover{
+  color: var(--cor02);
+  text-decoration: underline;
+  background-color: var(--cor01);
+  border-radius: 5px;
+}
+
+footer{
+  background-color: var(--cor05);
+}
+
+footer p{
+  color: var(--cor00);
+  text-align: center;
+}
+
+footer a{
+  color: var(--cor00);
+}
